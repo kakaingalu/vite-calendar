@@ -1,0 +1,158 @@
+/* Custom CSS for React Big Calendar and Calendar Components */
+
+.rbc-calendar {
+  @apply h-full flex flex-col;
+}
+
+.rbc-event {
+  @apply rounded-md p-1 cursor-pointer text-sm leading-tight bg-blue-700 border border-blue-800;
+}
+
+.rbc-event-content-custom {
+  @apply flex flex-col items-start p-0.5;
+}
+
+.rbc-event-badge {
+  @apply text-xs px-1 py-0.5 rounded mr-0.5;
+}
+
+.rbc-event-reason-line {
+  @apply flex items-center w-full;
+}
+
+.rbc-event-reason-text {
+  @apply text-sm flex-grow text-white;
+}
+
+.rbc-event-title-text {
+  @apply text-sm whitespace-normal leading-tight;
+}
+
+/* Toolbar styling */
+.rbc-toolbar {
+  @apply flex justify-between items-center mb-2 text-base;
+}
+
+.rbc-btn-group button {
+  @apply bg-gray-200 border border-gray-300 px-3 py-1.5 cursor-pointer;
+}
+
+.rbc-btn-group button:hover {
+  @apply bg-gray-300;
+}
+
+.rbc-btn-group button.rbc-active {
+  @apply bg-blue-600 text-white;
+}
+
+/* Day and week view styling */
+.rbc-time-view .rbc-header {
+  @apply bg-gray-100 py-1 border-b border-gray-300;
+}
+
+.rbc-day-slot .rbc-events-container {
+  @apply mx-2;
+}
+
+/* Agenda view styling */
+.rbc-agenda-table {
+  @apply w-full border-collapse;
+}
+
+.rbc-agenda-table th,
+.rbc-agenda-table td {
+  @apply border border-gray-200 p-2 text-left;
+}
+
+.rbc-agenda-time-cell {
+  @apply font-bold;
+}
+
+/* Today's highlight */
+.rbc-day-bg.rbc-today {
+  @apply bg-blue-50;
+}
+
+/* Selected slot highlight */
+.rbc-day-bg.rbc-selected-cell {
+  @apply bg-blue-100;
+}
+
+.rbc-day-bg,
+.rbc-time-slot {
+  @apply cursor-pointer;
+}
+
+/* Sidebar styles */
+.calendar-page-wrapper {
+  @apply h-full flex flex-col;
+}
+
+.calendar-sidebar {
+  @apply w-72 flex-shrink-0 bg-gray-50 border-r border-gray-200;
+}
+
+.calendar-sidebar-body {
+  @apply overflow-y-auto;
+}
+
+.calendar-sidebar-event-list {
+  @apply flex-grow;
+}
+
+.calendar-event-item {
+  @apply cursor-pointer transition-all duration-200 ease-in-out;
+}
+
+.calendar-event-item:hover {
+  @apply -translate-y-0.5 shadow-md;
+}
+
+.calendar-event-item-title {
+  @apply text-base text-gray-800;
+}
+
+.calendar-event-item-matter {
+  @apply text-sm text-gray-600;
+}
+
+.calendar-event-item-footer {
+  @apply border-t border-gray-200 bg-gray-100 text-gray-600 text-sm;
+}
+
+/* Main calendar area */
+.calendar-main-area {
+  @apply flex-grow relative flex flex-col;
+}
+
+.calendar-fullcalendar-wrapper {
+  @apply flex-grow;
+}
+
+/* Sidebar toggle button for showing the sidebar */
+.calendar-sidebar-toggle-show {
+  @apply z-10;
+}
+
+/* Adjustments for the overall layout */
+html, body, #root, .App {
+  @apply h-full;
+}
+
+.App {
+  @apply flex flex-col;
+}
+
+/* Ensure the main content area scrolls if needed */
+.calendar-page-wrapper {
+  @apply flex-grow overflow-hidden;
+}
+
+/* If you want the calendar to scroll independently */
+.calendar-fullcalendar-wrapper {
+  @apply overflow-y-auto;
+}
+
+.rbc-calendar-height {
+  @apply h-full;
+}
